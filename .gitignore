@@ -1,0 +1,10 @@
+# This is a comment
+gitignore/
+__pycache__/
+.DS_Store
+.zip
+_archive/
+in/
+out/
+.sublime-project
+.sublime-workspace
