@@ -76,3 +76,26 @@ Fraction of affected rows represents the share of rows where at least one value 
 
 The 'weighted' column shows the same metrics but multiplying each metric by the corresponding weight. This only affects the 'average change relative to scale' set of metrics.
 
+
+# Current columns
+
+The following columns are currently included in the preprocessing. Note that additional columns, including whether a building has an EV/PHEV or not and whether a building has solar PV and/or electricity storage, are added after the fact (not shown here, but available in final data):
+
+```
+BUILDING_FLOORSPACE_SQFT        Building floor space in sq ft
+PARCEL_UNITS                    Number of units in parcel
+YEAR_BUILT                      Year the building was built
+EFFECTIVE_YEAR                  Effective year (major renovation)
+NUMBER_FLOORS                   Number of floors in building
+BUILDING_COVERAGE_RATIO         The ratio between the building footprint area and the area of its land plot.
+                                A BCR of 1.0 means the building occupies the entire land (no land available around it)
+PARCELFN_COMMERCIAL             Whether a building is commericial or not
+PARCELFN_RESIDENTIAL_MULTIPLE   Whether a building is a multi-unit residential building or not
+PARCELFN_RESIDENTIAL_SINGLE     Whether a building is a single-unit residential building or not
+DENSITY_RESIDENTIAL             The residential population density in the census block group of the building
+DENSITY_COMMERCIAL              The commercial (job) density in the census block group of the building
+VALUE_LAND                      The (tax assessed) land value of the building parcel
+VALUE_BLDG                      The (tax assessed) value of the building 
+HAS_AC                          Whether the building has AC or not
+HAS_HEAT                        Whether the building has a heating system or not
+```
